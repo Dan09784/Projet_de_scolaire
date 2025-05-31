@@ -1,0 +1,299 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    scroll-behavior: smooth;
+    text-align: center;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(180deg, #e3f2fd, #bbdefb);
+    color: #333;
+}
+.container {
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-radius: 0 0 15px 15px;
+}
+
+header .logo {
+    font-size: 30px;
+    color: #0d47a1;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header .logo span {
+    color: #00c853;
+}
+
+header .navigation {
+    list-style: none;
+    display: block;
+    gap: 20px;
+}
+
+header .navigation li a {
+    text-decoration: none;
+    position: sticky;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 30px;
+    transition: all 0.4s ease;
+}
+
+header .navigation li a:hover {
+    background: #00c853;
+    color: #fff;
+}
+
+/* Bannière */
+.banniere {
+    background: url('acceuil.jpg');
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-size: cover; /* Added for better background image handling */
+    background-position: center; /* Added for better background image handling */
+}
+
+.banniere::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+}
+
+.banniere .contenu {
+    position: relative;
+    color: #fff;
+    z-index: 2;
+    animation: fadeInDown 1s ease-out forwards;
+    opacity: 0;
+    padding: 0 20px; /* Added padding for smaller screens */
+}
+.cta-buttons{
+    z-index: 100px;
+}
+.banniere .cta-buttons a {
+    text-decoration: none;
+    background: #00c853;
+    color: white;
+    padding: 12px 25px;
+    margin: 0 8px;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.banniere .cta-buttons a:hover {
+    background: #0d47a1;
+}
+
+/* Services */
+.services {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding:  20px;
+}
+
+.lll{
+    border: #333;
+    border-radius: 20px;
+}
+.service-card, .service1, .service3 {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card img, .service1 img, .service3 img {
+    width: 200px;
+    height: 499px; /* This height might be too large on small screens */
+    object-fit: cover;
+    border-radius: 10px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.service-card:hover, .service1:hover, .service3:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+.titre-texte {
+    text-align: center;
+    font-size: 2.5em;
+    color: #0d47a1;
+    margin-bottom: 20px;
+}
+
+.titre-texte span {
+    color: #00c853;
+}
+ img{
+        max-width: auto;
+        height: auto;
+        display: block;
+    }
+    video{
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+/* À propos */
+.apropos .about-intro {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.about-list {
+    margin: 20px auto;
+    padding-left: 20px;
+}
+
+.about-list li {
+    margin-bottom: 10px;
+}
+
+/* Témoignage */
+.temoignage .services {
+    margin-top: 20px;
+}
+
+.temoignage p {
+    font-size: 0.95em;
+    color: #555;
+}
+
+/* Bouton général */
+.bouton {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #00c853;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.bouton:hover {
+    background: #0d47a1;
+}
+
+.call{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    padding: 29px;
+}
+.lett{
+    color: brown;
+}
+/* Copyright */
+.copyright {
+    text-align: center;
+    padding: 20px 10px;
+    background: #0d47a1;
+    color: #fff;
+    border-radius: 15px 15px 0 0;
+}
+
+/* Apparition au scroll */
+.section-hidden {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.section-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Le bouton */
+#menubutton {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Menu latéral caché */
+.menu {
+    position: fixed;
+    top: 0;
+    right: -250px; /* caché à droite */
+    width: 250px;
+    height: 100%;
+    border-radius: 16px;
+    border: solid 5px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(55px);
+    box-shadow: 0px 0px 30px rgb(0,0,0, 0.1);
+    color: #ffffcc;
+    padding-top: 60px;
+    transition: right 0.3s ease;
+    z-index: 9999;
+}
+
+/* Quand il est visible */
+.menu.active {
+    right: 0;
+}
+
+/* Liens du menu */
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul li {
+    padding: 15px;
+    border-bottom: 1px solid #444;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+@media(max-width:800px){
+    a{
+        display: block;
+        
+    }
+}
