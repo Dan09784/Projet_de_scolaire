@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>En-savoir plus</title>
+    <link rel="stylesheet" href="ensavoir.css">
+</head>
+<body>
+    <header class="Titre" id="Titre">
+        <div class="born">
+            <h1> <span>E</span>n savoir plus sur notre plateforme de santé Healthsphere</h1>
+            <h3> Qui sommes-nous ?
+                HealthSphere est une plateforme dédiée à la sensibilisation et à l’éducation en matière de santé.<br> Nous mettons à disposition des informations fiables, des outils interactifs et des conseils personnalisés pour aider chacun à adopter un mode de vie sain.
+                
+                Notre mission
+                Notre objectif est de rendre l’information médicale accessible à tous, de promouvoir des habitudes de vie saines et d’accompagner chaque utilisateur dans son bien-être au quotidien. Nous croyons que la prévention et l’éducation sont les clés d’une meilleure santé.
+            </h3>
+            <img src="IMG 7.jpg" alt="img">
+        </div>
+    </header>
+    
+    <section class="container" id="container">
+        <div class="valeurs">
+            <p>Nos valeurs</p>
+            <div class="services">
+                <div class="contenue">
+                    <img src="Fiabilite.jpg" alt="Fiabilité">
+                    <h3>💌 Fiabilité – Nos contenus sont basés sur des sources médicales vérifiées.</h3>
+                </div>
+                <div class="contenue">
+                    <img src="accessibilite.jpg" alt="Accessibilité">
+                    <h3>❤ Accessibilité – Une plateforme intuitive et ouverte à tous</h3>
+                </div>
+                <div class="contenue">
+                    <img src="innovation.jpg" alt="Innovation">
+                    <h3>📶 Innovation – Des outils interactifs et des conseils personnalisés.</h3>
+                </div>
+                <div class="contenue">
+                    <img src="engagement.jpg" alt="Engagement">
+                    <h3>♻ Engagement – Une volonté d’informer et de sensibiliser pour un monde en meilleure santé.</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="offrons" id="offrons">
+        <div class="oft">
+            Ce que nous offrons<br>
+            📌 Articles éducatifs sur la santé et le bien-être.<br>
+            📌 Quiz et tests pour évaluer ses connaissances et habitudes de santé.<br>
+            📌 Outils de suivi personnalisé (hygiène de vie, alimentation, activité physique, etc.).<br>
+            📌 Un espace d’échange avec des professionnels de santé (bientôt disponible).
+        </div>
+    </section>
+    
+    <section class="confiance" id="confiance">
+        Pourquoi nous faire confiance ?
+        Chez HealthSphere, nous nous engageons à fournir des contenus précis et fondés sur des sources médicales reconnues. Nous prônons la transparence et la qualité dans toutes les informations que nous partageons.
+        
+        Comment nous contacter ?
+        📧 Email : [Dan09784@icloud.com]
+        🌍 Site web : www.healthsphere.com
+        📱 Réseaux sociaux : [Liens vers tes pages Facebook, Instagram, Twitter]
+        
+        Nous sommes ravis de vous accompagner dans votre parcours vers une meilleure santé !
+    </section>
+
+    <!-- New Section: Our Team -->
+    <section class="team" id="team">
+        <h2>Notre Équipe</h2>
+        <div class="services">
+            <div class="contenue">
+                <img src="doch1.jpg" alt="Team Member 1">
+                <h3>Dr. Jean Dupont</h3>
+                <p>Expert en nutrition et bien-être.</p>
+            </div>
+            <div class="contenue">
+                <img src="IMG6.jpg" alt="Team Member 2">
+                <h3>Dr. Marie Curie</h3>
+                <p>Spécialiste en médecine préventive.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Section: Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <h2>Témoignages</h2>
+        <div class="services">
+            <div class="contenue">
+                <p>"HealthSphere a transformé ma vie. Les conseils sont pratiques et faciles à suivre." - Alice</p>
+            </div>
+            <div class="contenue">
+                <p>"Une ressource inestimable pour quiconque cherche à améliorer sa santé." - Bob</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Section: Contact Form -->
+    <section class="contact" id="contact">
+        <h2>Contactez-nous</h2>
+        <form class="container" method="POST" action="login.php">
+            <section class="input-box">
+                <input type="text" name="nom" placeholder="Votre Nom" required>
+            </section>
+            <section class="input-box">
+                <input type="email" name="email" placeholder="Votre Email" required>
+            </section>
+            <section class="input-box">
+                <textarea name="message" placeholder="Votre Message" required></textarea>
+            </section>
+            <button class="login-button" type="submit">Envoyer</button>
+        </form>
+    </section>
+    <script>
+        // Animation au scroll
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                entry.target.classList.toggle('show', entry.isIntersecting);
+            });
+        }, { threshold: 0.2 });
+    
+        document.querySelectorAll('section, .contenue, .born').forEach(el => {
+            el.classList.add('hidden');
+            observer.observe(el);
+        });
+    
+        // Style d'apparition
+        const style = document.createElement('style');
+        style.innerHTML = `
+            .hidden {opacity: 0; transform: translateY(20px); transition: all 1s ease;}
+            .show {opacity: 1; transform: translateY(0);}
+        `;
+        document.head.appendChild(style);
+    
+        // Forme d'accueil animée
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelector('header').classList.add('show');
+        });
+    </script>
+    
+</body>
+</html>
