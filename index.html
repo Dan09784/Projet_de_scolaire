@@ -144,7 +144,7 @@
                 <a href="mailto"> Dan09784@icloud.com"</a>
             </div>
         </section>
-        <script>const temoignagesData = [
+        <script> const temoignagesData = [
         { auteur: 'Sarah M.', message: 'Grâce à HealthSphere, j’ai compris l’importance de ma santé au quotidien.' },
         { auteur: 'Dr. Kevin L.', message: 'Une plateforme fiable pour guider mes patients vers de bonnes pratiques.' },
         { auteur: 'Elie R.', message: 'Simple, utile et bien structuré. Je recommande pour toute la famille !' }
@@ -195,6 +195,190 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 
+
+</body>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Healthsphere - Apprenez, Prévenez, Vivez mieux</title>
+</head> 
+<body>
+    <div class="container">
+        <header>
+            <a href="#" class="logo">💎<span>H</span>ealthsphere</a>
+            <div class="menu-button" id="menubutton">&#9776;</div>
+            <nav class="menu" id="menu">
+                <ul class="navigation">
+                <li ><a href="#banniere" onclick="toggleMenu();">Accueil</a></li>
+                <li ><a href="#services" onclick="toggleMenu();">Articles & conseils</a></li>
+                <li ><a href="Expert.html" onclick="toggleMenu();">Professionnels de santé</a></li>
+                <li ><a href="#apropos" onclick="toggleMenu();">Services</a></li>
+                <li ><a href="#temoignage" onclick="toggleMenu();">Temoignage</a></li>
+                <li ><a href="index.html" onclick="toggleMenu();">Connexion</a></li>
+                <li ><a href="question.html " class="bouton" onclick="toggleMenu();">QCM</a></li>
+            </ul>
+            </nav>
+            </div>
+        </header>
+        <header>
+            <div class="contenu">
+                <div class="cta-buttons">
+                    <a href="Expert.html" class="bouton">Contactez un expert</a>
+                    <a href="ensavoir.html" class="bouton">En savoir plus</a>
+                    <a href="actu.html" class="bouton">Actualités</a>
+                </div>
+        </header>
+        <section class="banniere" id="banniere">
+            <div class="contenu">
+                <div class="cta-buttons">
+                </div>
+            </div>
+        </section>
+        <section class="services" id="services">
+            <div>
+                <div class="contenu">
+                    <h2 class="titre-texte"><span>A</span>rticles & conseils</h2>
+                    <p><strong>Des conseils pratiques et des articles éducatifs pour une meilleure santé</strong></p>
+                </div>
+                <div>
+                    <div class="service1">
+                        <video autoplay controls loop muted src="video 2.mp4" width="1000" height="700"></video>
+                        <h3>Consultation en ligne</h3>
+                        <a href="Expert.html" style="color: orange;"><i>✔Cliquez ici pour une consultation</i></a>
+                        <p>Consultez un médecin en ligne pour obtenir des conseils et des prescriptions médicales.</p>
+                    </div>
+                    <div class="service3">
+                        <video autoplay controls loop muted  src="video 3.mp4" width="1000" height="700"></video>
+                        <h3>Articles & conseils educatif</h3>
+                        <p><i>Des articles et conseils pratiques des bonnes habitudes quotidiennes pour une bonne santé.</i></p>
+                        <a href="articles.html" style="color: orange;"><i>🚩Cliquez ici pour en savoir plus</i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="apropos" id="apropos">
+            <div class="contenu">
+                <h2 class="titre-texte"><span>N</span>os services</h2>
+                <video autoplay controls loop muted src="video1.mp4" height="900" width="900" class="lll"></video>
+                <audio src=""></audio>
+                <style>
+                    #video{
+                        border-radius: 10px;
+                        padding: 10px;
+                    }
+                </style>
+                <p class="about-intro">
+                    Bienvenue sur <span>Healthsphere</span>, une initiative dédiée à la sensibilisation et à l'éducation sur la santé. 
+                    Notre mission est d'informer, éduquer et accompagner les individus dans l'adoption de bonnes pratiques pour une meilleure qualité de vie.
+                </p>
+                <p>Nous croyons que l'accès à l'information est la clé pour prévenir de nombreuses maladies et améliorer le bien-être général. C'est pourquoi nous mettons à disposition :</p>
+                <ul class="about-list">
+                    <li>Des articles éducatifs rédigés par des experts pour vous aider à mieux comprendre votre santé</li>
+                    <li>Des quiz interactifs pour tester et approfondir vos connaissances</li>
+                    <li>Des outils de suivi personnalisés pour vous aider à atteindre vos objectifs de bien-être</li>
+                    <li>Un accès à des professionnels de santé pour des conseils fiables et adaptés</li>
+                    <li>Des campagnes de sensibilisation pour informer sur les enjeux de santé publique</li>
+                </ul>
+            </div>
+            <div class="services">
+                <div class="service-card">
+                    <img src="CONSUL.jpg" alt="Consultation Médicale">
+                    <h3>Consultation Médicale</h3>
+                </div>
+                <div class="service-card">
+                    <img src="IMG3.jpg" alt="Chirurgie">
+                    <h3>Chirurgie</h3>
+                </div>
+                <div class="service-card">
+                    <img src="phar.jpg" alt="Pharmacie">
+                    <h3>Pharmacie</h3>
+                </div>
+                <div class="service-card">
+                    <img src="dens.jpg" alt="Soins Dentaires">
+                    <h3>Soins Dentaires</h3>
+                </div>
+                <div class="service-card">
+                    <img src="urge.jpg" alt="Urgences">
+                    <h3>Urgences</h3>
+                </div>
+                <div class="service-card">
+                    <img src="pediatrie.jpg" alt="Pédiatrie">
+                    <h3>Pédiatrie</h3>
+                </div>
+                <div class="service-card">
+                    <img src="Cardiologies.jpg" alt="cardiologie">
+                    <h3>cardiologie</h3>
+                </div>
+                <div class="service-card">
+                    <img src="Derm.jpg" alt="Dermatologie">
+                    <h3>Dermatologie</h3>
+                </div>
+                <div class="service-card">
+                    <img src="Gyne.jpg" alt="Gynécologie">
+                    <h3>Gynécologie</h3>
+                </div>
+            </div>
+            <div class="titre2"> 
+                <a  href="ensavoir.html" class="bouton">Voir plus</a>
+            </div>
+        </section>
+        <section class="temoignage" id="temoignage">
+            <div class="contenu">
+                <h2 class="titre-texte"><span>T</span>émoignage</h2>
+                <div class="services">
+                    <div class="service-card">
+                </div>
+            </div>
+        </section> 
+        <section class="call" id="call">
+            <div class="lett">
+                <p>contactez-nous</p>
+                <a href="tel"> au +243977100789</a>
+                <p>contactez-nous par mail</p>
+                <a href="mailto"> Dan09784@icloud.com"</a>
+            </div>
+        </section>
+        <script>const temoignagesData = [
+        { auteur: 'Sarah M.', message: 'Grâce à HealthSphere, j’ai compris l’importance de ma santé au quotidien.' },
+        { auteur: 'Dr. Kevin L.', message: 'Une plateforme fiable pour guider mes patients vers de bonnes pratiques.' },
+        { auteur: 'Elie R.', message: 'Simple, utile et bien structuré. Je recommande pour toute la famille !' }
+    ];
+    
+    const temoignagesContainer = document.querySelector('.temoignage .services');
+    temoignagesContainer.innerHTML = '';
+    
+    temoignagesData.forEach(t => {
+        temoignagesContainer.innerHTML += `
+            <div class="service-card">
+                <p>"${t.message}"</p>
+                <h3>- ${t.auteur}</h3>
+            </div>
+        `;
+    });
+    </script>
+        <div class="copyright">
+            <p><strong>&copy; 2025 <a href="#">Dan Genius</a> - Sensibilisation à la santé</strong></p>
+        </div>
+    </div>
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const menuButton = document.getElementById('menubutton');
+    const menu = document.querySelector('.menu');
+
+    if (menuButton && menu) {
+        menuButton.addEventListener('click', function() {
+            menu.classList.toggle('active');
+        });
+    }
+});
+
+</script>
 
 </body>
 </html>
