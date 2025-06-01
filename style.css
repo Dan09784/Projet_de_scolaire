@@ -220,7 +220,6 @@ header .navigation li a:hover {
 .lett{
     color: brown;
 }
-/* Copyright */
 .copyright {
     text-align: center;
     padding: 20px 10px;
@@ -229,7 +228,7 @@ header .navigation li a:hover {
     border-radius: 15px 15px 0 0;
 }
 
-/* Apparition au scroll */
+
 .section-hidden {
     opacity: 0;
     transform: translateY(30px);
@@ -241,7 +240,7 @@ header .navigation li a:hover {
     transform: translateY(0);
 }
 
-/* Le bouton */
+
 #menubutton {
     position: fixed;
     top: 20px;
@@ -315,7 +314,6 @@ body{
     padding: 20px;
 }
 
-/* Header */
 header {
     display: flex;
     justify-content: space-between;
