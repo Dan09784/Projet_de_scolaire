@@ -99,3 +99,12 @@ input, textarea {
     color: #00ffea;
     box-shadow: 0 0 15px rgba(0, 255, 234, 0.7);
 }
+footer{
+    font-size: 30px;
+    background-color: #000;
+    text-align: center;
+}
+footer address{
+    padding: 10px;
+    word-spacing: 10px;
+}

@@ -1,0 +1,118 @@
+*{
+    font-family: "poppins" , sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    justify-content: center;
+    background: linear-gradient(rgba(0,0,0,0.6)),url(mec.jpg);
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    background: rgb(0,0,0, 0.100);
+    position: relative;
+    width: 320px;
+    padding: 15px;
+    border-radius: 16px;
+    border: solid 5px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(25px);
+    box-shadow: 0px 0px 30px rgb(0,0,0, 0.1);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ h1{
+    color: rgb(158, 91, 8);
+    
+}
+.login-title{
+    margin-bottom: 50px;
+}
+.input-box{
+    display: flex;
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+}
+.input-box input{
+    width: 100%;
+    padding: 10px 16px 10px 38px;
+    border-radius: 99px;
+    border: solid 3px transparent;
+    background: rgb(255,255,255, 0.1);
+    outline: none;
+    caret-color: white;
+    color: white;
+    font-weight: 500;
+    transition: 0.25s;
+}
+.input-box input:focus{
+    border: solid 3px rgb(255,255,255, 0.25);
+}
+.input-box input::placeholder{
+    color: rgb(255,255,255, 0.75);
+}
+.input-box input::-ms-reveal{
+    filter: invert(100%);
+}
+.input-box i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 14px;
+    color: rgb(255,255,255, 0.75);
+    font-size: 18px;
+    transition: 0.25s;
+}
+.input-box input:focus + i {
+    color: white;
+}
+.remember-forgot-box{
+    display: flex;
+    width: 100%;
+    margin-top: 16px;
+    justify-content: space-between;
+    color: white;
+}
+.remember-forgot-box h5{
+    font-weight: normal;
+    color: white;
+}
+
+.remember-me{
+    display: flex;
+    gap: 8px;
+}
+.forgot-password:hover{
+    color: orange;
+}
+.login-button{
+    width: 100%;
+    margin-top: 24px;
+    background: orange;
+    border: none;
+    border-radius: 99px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+    outline:  transparent 3px solid;
+    transform: scale(1.05);
+}
+.login-button:focus{
+    outline: #32CDD58a epx solid;
+}
+.dont-have-an-account{
+    font-weight: normal;
+    margin-top: 12px;
+}
