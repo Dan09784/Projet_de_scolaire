@@ -1,15 +1,19 @@
- 
 *{
     padding: 0;
     margin: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
     text-align: center;
 }
 body{
     font-family: 'Nunito', sans-serif;
-    background: linear-gradient(180deg, #e3f2fd, #bbdefb,);
     color: #333;
+    background: linear-gradient(270deg, #74ebd5, #ACB6E5);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: #fff;
 }
 .container {
     width: 100%;
@@ -171,18 +175,25 @@ header .navigation li a:hover {
 
 
 .apropos .about-intro {
-    font-size: 1.1em;
+    font-size:28px;
     line-height: 1.6;
     margin: 20px auto;
-    text-align: center;
+    text-align: justify;
+}
+#mmm{
+    font-size: 27px;
 }
 
 .about-list {
+    font-size: 26px;
+    text-align: left;
     margin: 20px auto;
     padding-left: 20px;
 }
 
 .about-list li {
+    font-size: 26px;
+    text-align: left;
     margin-bottom: 10px;
 }
 

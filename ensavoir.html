@@ -112,32 +112,6 @@
             <button class="login-button" type="submit">Envoyer</button>
         </form>
     </section>
-    <script>
-        // Animation au scroll
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                entry.target.classList.toggle('show', entry.isIntersecting);
-            });
-        }, { threshold: 0.2 });
-    
-        document.querySelectorAll('section, .contenue, .born').forEach(el => {
-            el.classList.add('hidden');
-            observer.observe(el);
-        });
-    
-        // Style d'apparition
-        const style = document.createElement('style');
-        style.innerHTML = `
-            .hidden {opacity: 0; transform: translateY(20px); transition: all 1s ease;}
-            .show {opacity: 1; transform: translateY(0);}
-        `;
-        document.head.appendChild(style);
-    
-        // Forme d'accueil animée
-        document.addEventListener('DOMContentLoaded', () => {
-            document.querySelector('header').classList.add('show');
-        });
-    </script>
     
 </body>
 </html>
