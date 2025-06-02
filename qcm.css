@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    justify-content: center;
+    margin-top: 50px;
+    background: linear-gradient(to right,rgb(2, 2, 89),rgb(48, 5, 5));
+}
+header{
+    font-size: 40px;
+    color: white;
+}
+span{
+    font-size: 200px;
+}
+#chat-bot{
+    height: 700px;
+    overflow: auto;
+    border: 1px solid #ccc;
+    border-radius: 17px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(187, 164, 247);
+}
+input{
+    width: 75%;
+    padding: 8px;
+    font-size: 18px;
+    border-radius: 7px;
+}
+button{
+    width: 6%;
+    padding: 8px;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 40px;
+}
+button:hover{
+    background-color: white;
+}
