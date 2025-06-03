@@ -16,7 +16,7 @@ header{
 span{
     font-size: 200px;
 }
-#chat-bot{
+#chat-box{
     height: 700px;
     overflow: auto;
     border: 1px solid #ccc;
