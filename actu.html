@@ -12,10 +12,17 @@
 
     body {
       margin: 0;
-      background: linear-gradient(to right,rgb(2, 2, 89),rgb(48, 5, 5));
+      background-size: 400% 400%;
+      background: linear-gradient(270deg, #03238a, #6b0303);
+      animation: gradientBG 13s ease infinite;
       padding: 2rem;
-      color: #2c3e50;
+      color: white;
     }
+    @keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
 
     h1 {
       text-align: center;
