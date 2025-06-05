@@ -11,49 +11,51 @@
         <div>
         <h1>INSCRIPTION</h1>
     </div>
+        
+    <form action="" req>
         <section class="contenu">
         <label for="">Nom</label>
         <br>
-        <input type="text" placeholder="Votre nom...">
+        <input type="text" placeholder="Votre nom..." required >
     </section>
     <section class="contenu">
         <label for="">Post-nom</label>
         <br>
-        <input type="text" placeholder="Votre Post-nom...">
+        <input type="text" placeholder="Votre Post-nom..." required>
     </section>
     <section class="contenu">
         <label for="">Prenom</label>
         <br>
-        <input type="text" placeholder="e.g Dan">
+        <input type="text" placeholder="e.g Dan" required>
     </section>
     <section class="contenu">
-        <label for="">Eail</label>
+        <label for="">Email</label>
         <br>
-        <input type="email" name="mail" id="" placeholder="E.g Jean-luc@mail.com">
+        <input type="email" name="mail" id="" placeholder="E.g Jean-luc@mail.com" required>
     </section>
     <section class="contenu">
         <label for="">Votre date de naissance</label>
-    <input type="date" name="date" id="" >
+    <input type="date" name="date" id=""  required>
     </section>
-    <section class="contenu">
+    <section class="contenu" id="ppp">
         <label for="homme">Homme</label>
-        <input type="radio" name="homme" id="">
+        <input type="radio" name="homme" id="ppp" required>
         <label for="homme">Femme</label>
-        <input type="radio" name="homme" id="">
+        <input type="radio" name="homme" id="ppp" required>
     </section>
     <hr>
-    <section class="contenu">
+    <section class="contenu" id="ppp">
         <label for="celib">célibataire</label>
-        <input type="radio" name="celib" id="">
+        <input type="radio" name="celib" id="ppp">
         <label for="celib">Mariés</label>
-        <input type="radio" name="celib" id="">
+        <input type="radio" name="celib" id="ppp">
         <label for="celib">Divorsé</label>
-        <input type="radio" name="celib" id="">
+        <input type="radio" name="celib" id="ppp">
     </section>
     <section class="contenu">
         <label for="">Ville</label>
-        <select  name="" id="">
-        <form  class="MTK">
+        <select   name="lll" id="lll">
+        <form  class="MTK"  id="MTK">
         <option value="">Lubumbashi</option>
         <option value="">Kinshasa</option>
         <option value="">Bukavu</option>
@@ -63,9 +65,13 @@
         </form>
     </select>
     </section>
+    
+    <br>
     <button type="submit">Valider</button>
     <br> <br>
-    <button type="reset">Clain</button>
+    <button type="reset" id="kkk">Clain</button>
+    <br><a href="connexion.html" id="contenu">Connectez-vous</a>
+    </form>
     </div>
 </body>
 </html>

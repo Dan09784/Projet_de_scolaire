@@ -16,7 +16,8 @@ body{
     background-position: center;
 }
 .content{
-    background: rgb(0,0,0, 0.100);
+    text-align: center;
+    background: rgba(31, 2, 2, 0.1);
     position: relative;
     width: 320px;
     padding: 15px;
@@ -29,3 +30,62 @@ body{
     flex-direction: column;
     align-items: center;
 }
+.content input{
+    color: brown;
+}
+h1{
+    color: orange;
+    padding: 15px;
+}
+input{
+    height:  40px;
+    border-radius: 7px;
+    border: none;
+    width: 90%;
+    color: brown;
+    font-style: italic;
+    font-size: 19px;
+}
+a{
+    display: block;
+    text-decoration: none;
+    color: orangered;
+    margin-left: 50%;
+    font-style: italic;
+    font-size: 17px;
+}
+label{
+    font-size: 20px;
+}
+#ppp{
+    display: flex;
+    margin: 7px;
+    
+}
+#MTK{
+  background-color: brown;
+}
+button{
+    width: 40%;
+    height: 26px;
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    color: black;
+    background: orange;
+    font-size: 17px;
+    
+}
+#kkk{
+    display: flex;
+    background-color: brown;
+    border-radius: 22px;
+}
+button:hover{
+    transform: scale(30px);
+    zoom: 1.6;
+    border-radius: 16px;
+    color: white;
+    background: cornflowerblue;
+}
+
