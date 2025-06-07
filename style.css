@@ -69,9 +69,11 @@ header .navigation li a:hover {
     margin-top: -30px;
 }
 .banniere {
-    background: url('acceuil.jpg');
+    background: url('acceuil.jpg') ;
     height: 90vh;
     display: flex;
+    border-radius: 23px;
+    border: #74ebd5 solid 12px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -86,7 +88,7 @@ header .navigation li a:hover {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.6);
     top: 0;
     left: 0;
 }
@@ -107,7 +109,7 @@ header .navigation li a:hover {
     background: #00c853;
     color: white;
     padding: 12px 25px;
-    margin: 0 23px;
+    margin:  68px;
     border-radius: 30px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     transition: all 0.3s ease;
@@ -119,6 +121,7 @@ header .navigation li a:hover {
 .services {
     display: flex;
     justify-content: center;
+    color: coral;
     flex-wrap: wrap;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
@@ -149,7 +152,7 @@ header .navigation li a:hover {
 
 .service-card:hover, .service1:hover, .service3:hover {
     transform: translateY(-10px);
-    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.6);
 }
 
 .titre-texte {
@@ -308,6 +311,5 @@ header .navigation li a:hover {
     .banniere img{
         width: 20%;
         height: 30%;
-        background: none;
     }
 }
