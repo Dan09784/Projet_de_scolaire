@@ -1,11 +1,12 @@
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background: linear-gradient(to right,rgb(184, 160, 24),rgb(48, 5, 5));
+    background: url(phar.jpg);
+    background-size: cover;
     color: white;
     ;
 }
 header{
-    background:coral;
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
     border-radius: 21px;
 }
 h1{
@@ -16,8 +17,7 @@ h1{
     font-size: 20px;
     margin: 12%;
     padding: 12px;
-    background: blur(100px);
-    backdrop-filter: blur(600px);
+    backdrop-filter: blur(30px);
     border-radius: 40px;
 }
 input{
@@ -44,7 +44,7 @@ textarea:hover{
     color: black;
 }
 ::placeholder{
-    color: coral;
+    color: rgb(75, 74, 74);
 }
 @media(max-width:800px){
     #zzz{
