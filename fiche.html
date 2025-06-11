@@ -12,49 +12,54 @@
         <h1>INSCRIPTION</h1>
     </div>
         
-    <form action="" req>
+    <form action="connexion.php" method="POST">
         <section class="contenu">
         <label for="">Nom</label>
         <br>
-        <input type="text" placeholder="Votre nom..." required >
+        <input type="text" name="nom" placeholder="Votre nom..." required >
     </section>
     <section class="contenu">
         <label for="">Post-nom</label>
         <br>
-        <input type="text" placeholder="Votre Post-nom..." required>
+        <input type="text" name="postnom" placeholder="Votre Post-nom..." required>
     </section>
     <section class="contenu">
         <label for="">Prenom</label>
         <br>
-        <input type="text" placeholder="e.g Dan" required>
+        <input type="text" name="Prenom" placeholder="e.g Dan" required>
     </section>
     <section class="contenu">
         <label for="">Email</label>
         <br>
-        <input type="email" name="mail" id="" placeholder="E.g Jean-luc@mail.com" required>
+        <input type="email" name="email" id="" placeholder="E.g Jean-luc@mail.com" required>
+    </section>
+    <section class="contenu">
+        <label for="">Crée un mots de passe</label>
+        <br>
+        <input type="password" name="mot_de_passe" id="" placeholder="E.g Juls3456..." required>
     </section>
     <section class="contenu">
         <label for="">Votre date de naissance</label>
-    <input type="date" name="date" id=""  required>
+    <input type="date" name="date_de_naissance" id=""  required>
     </section>
     <section class="contenu" id="ppp">
         <label for="homme">Homme</label>
-        <input type="radio" name="homme" id="ppp" required>
+        <input type="radio" name="genre" id="ppp" required>
         <label for="homme">Femme</label>
-        <input type="radio" name="homme" id="ppp" required>
+        <input type="radio" name="genre" id="ppp" required>
     </section>
     <hr>
     <section class="contenu" id="ppp">
         <label for="celib">célibataire</label>
-        <input type="radio" name="celib" id="ppp">
+        <input type="radio" name="etat" id="ppp">
         <label for="celib">Mariés</label>
-        <input type="radio" name="celib" id="ppp">
+        <input type="radio" name="etat" id="ppp">
         <label for="celib">Divorsé</label>
-        <input type="radio" name="celib" id="ppp">
+        <input type="radio" name="etat" id="ppp">
     </section>
     <section class="contenu">
         <label for="">Ville</label>
-        <select   name="lll" id="lll">
+        <select   name="ville" id="lll">
         <form  class="MTK"  id="MTK">
         <option value="">Lubumbashi</option>
         <option value="">Kinshasa</option>

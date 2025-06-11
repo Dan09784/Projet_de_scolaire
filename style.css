@@ -46,7 +46,7 @@ header .logo span {
 
 header .navigation {
     list-style: none;
-    display: block;
+    display: inline-block;
     gap: 20px;
 }
 
@@ -62,11 +62,15 @@ header .navigation li a {
 header .navigation li a:hover {
     background: #00c853;
     color: #fff;
+    zoom: 1.2;
 }
 .cta-buttons{
     position: absolute;
     z-index: 1000;
     margin-top: -30px;
+}
+.cta-buttons:hover{
+    zoom: 1.2;
 }
 .banniere {
     background: url('acceuil.jpg') ;
@@ -134,6 +138,7 @@ header .navigation li a:hover {
 }
 .service-card, .service1, .service3 {
     background: #ffffff;
+    box-shadow: #74ebd5;
     border-radius: 20px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
     text-align: center;
@@ -311,5 +316,9 @@ header .navigation li a:hover {
     .banniere img{
         width: 20%;
         height: 30%;
+    }
+    body{
+        overflow-x: hidden;
+        flex-wrap: wrap;
     }
 }
