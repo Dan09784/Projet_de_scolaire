@@ -33,7 +33,7 @@ header {
 }
 
 header .logo {
-    font-size: 30px;
+    font-size: 70px;
     color: #0d47a1;
     font-weight: 700;
     text-decoration: none;
@@ -42,6 +42,8 @@ header .logo {
 
 header .logo span {
     color: #00c853;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 80px;
 }
 
 header .navigation {
@@ -71,6 +73,7 @@ header .navigation li a:hover {
 }
 .cta-buttons:hover{
     zoom: 1.2;
+    
 }
 .banniere {
     background: url('acceuil.jpg') ;
@@ -147,8 +150,8 @@ header .navigation li a:hover {
 }
 
 .service-card img, .service1 img, .service3 img {
-    width: 200px;
-    height: 499px; 
+    width: 340px;
+    height: 399px; 
     object-fit: cover;
     border-radius: 10px;
     overflow: hidden;
@@ -271,6 +274,11 @@ header .navigation li a:hover {
     border: none;
     cursor: pointer;
 }
+.titre2:hover{
+    zoom: 1.1;
+    transform: translateY(10px);
+    color: #0d47a1;
+}
 
 /* Menu latéral caché */
 .menu {
@@ -317,8 +325,15 @@ header .navigation li a:hover {
         width: 20%;
         height: 30%;
     }
+    .banniere{
+        background: url(incrit.jpg);
+        background-size: cover;
+    }
     body{
         overflow-x: hidden;
         flex-wrap: wrap;
+    }
+    header.logo{
+        font-size: 10px;
     }
 }

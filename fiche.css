@@ -50,7 +50,7 @@ a{
     display: block;
     text-decoration: none;
     color: orangered;
-    margin-left: 50%;
+    margin-left: 60%;
     font-style: italic;
     font-size: 17px;
 }
@@ -59,7 +59,7 @@ label{
 }
 #ppp{
     display: flex;
-    margin: 7px;
+    margin: 1px;
     
 }
 #MTK{
@@ -92,4 +92,9 @@ button:hover{
     color: white;
     background: cornflowerblue;
 }
-
+@media(max-width:800px){
+    body{
+        overflow: hidden;
+    }
+    
+}
