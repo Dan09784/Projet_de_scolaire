@@ -326,8 +326,9 @@ header .navigation li a:hover {
         height: 30%;
     }
     .banniere{
-        background: url(incrit.jpg);
+        background: url(acceuil.jpg);
         background-size: cover;
+        
     }
     body{
         overflow-x: hidden;
@@ -335,5 +336,24 @@ header .navigation li a:hover {
     }
     header.logo{
         font-size: 10px;
+    }
+}
+@media (max-width: 400px) 
+{
+    #ttt{
+        font-size: 30px;
+    }
+    .logo{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: rgba(217, 132, 12, 0.6);
+    }
+    body{
+        background: rgb(81, 80, 80);
+    }
+    .banniere{
+        background: url(acceuil.jpg);
+        background-size: cover;
+        width: 400px;
+        height: 240px;
     }
 }
