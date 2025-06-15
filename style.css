@@ -321,6 +321,7 @@ header .navigation li a:hover {
     .contenu{
     display: none; 
     }
+    
     .banniere img{
         width: 20%;
         height: 30%;
@@ -335,7 +336,7 @@ header .navigation li a:hover {
         flex-wrap: wrap;
     }
     header.logo{
-        font-size: 10px;
+        font-size: -4px;
     }
 }
 @media (max-width: 400px) 
@@ -346,6 +347,7 @@ header .navigation li a:hover {
     .logo{
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         background-color: rgba(217, 132, 12, 0.6);
+        
     }
     body{
         background: rgb(81, 80, 80);
