@@ -1,3 +1,4 @@
+
 <?php
 include "unite.php";
 
@@ -6,7 +7,6 @@ include "unite.php";
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['email']) && isset($_POST['mot_de_passe'])) {
         
-
         $email = $_POST['email'];
         $mot_de_passe = $_POST['mot_de_passe'];
 
@@ -17,10 +17,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $user = mysqli_fetch_assoc($result);
             if (password_verify($mot_de_passe, $user['mot_de_passe'])) {
                 session_start();
+                
                 $_SESSION['user_id'] = $user['id'];
-                $_SESSION['nom'] = $user['nom'];
-                $nom = $user['nom']; // Pour l'affichage
-
+                
+                // Check if 'nom' key exists
+                if (isset($user['nom'])) {
+                    $_SESSION['nom'] = $user['nom'];
+                    $nom = $user['nom']; // Pour l'affichage
+                } else {
+                    $nom = "$nom"; // Default value if 'nom' is not set
+                }
+                
                 echo "
                 <!DOCTYPE html>
                 <html lang='fr'>
