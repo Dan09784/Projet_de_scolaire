@@ -15,77 +15,7 @@
   <section>
     <div id="chat-box" style="border:1px solid #ccc; height:250px; overflow-y:auto; padding:10px; margin-bottom:10px;"></div>
     <input id="user-input" type="text" placeholder="Posez-moi votre question ici...">
-    <button onclick="sendMessage()">💨</button>
+    <button onclick="sendMessage()"><img src="mail_7698692.png" alt="" width="23"></button>
   </section>
-
-  <script>
-    const knowledgeBase = [
-      {
-        keywords: ["bonjour", "salut", "hello"],
-        response: "Bonjour à toi ! Pose-moi une question sur ton QCM si tu veux 😊"
-      },
-      {
-        keywords: ["réponse", "bonne réponse", "choix"],
-        response: "Pour choisir la bonne réponse, élimine les options les plus improbables. Tu veux de l’aide sur une question précise ?"
-      },
-      {
-        keywords: ["question 1", "q1", "première question"],
-        response: "La question 1 parle de logique booléenne. As-tu pensé à faire une table de vérité ?"
-      },
-      {
-        keywords: ["aide", "explication", "je ne comprends pas"],
-        response: "Je suis là pour t’aider ! Quelle question te pose problème ?"
-      },
-      {
-        keywords: ["merci", "thanks"],
-        response: "Avec plaisir ! Continue à bosser dur 💪"
-      },
-      {
-        keywords: ["heure", "temps"],
-        response: () => `Il est ${new Date().toLocaleTimeString()} maintenant.`
-      },
-      {
-        keywords: ["date", "jour"],
-        response: () => `Nous sommes le ${new Date().toLocaleDateString()}.`
-      }
-    ];
-
-    function getBotResponse(message) {
-      const msg = message.toLowerCase();
-
-      for (const entry of knowledgeBase) {
-        for (const keyword of entry.keywords) {
-          if (msg.includes(keyword)) {
-            return typeof entry.response === "function"
-              ? entry.response()
-              : entry.response;
-          }
-        }
-      }
-
-      return "Je ne suis pas sûr de comprendre. Peux-tu reformuler ou préciser ta question ? 🤔";
-    }
-
-    function sendMessage() {
-      const input = document.getElementById("user-input");
-      const message = input.value.trim();
-      if (!message) return;
-
-      const chatBox = document.getElementById("chat-box");
-      chatBox.innerHTML += `<p class="user">👤 Vous : ${message}</p>`;
-
-      const botResponse = getBotResponse(message);
-      chatBox.innerHTML += `<p class="bot">🤖 Bot : ${botResponse}</p>`;
-
-      input.value = "";
-      chatBox.scrollTop = chatBox.scrollHeight;
-    }
-
-    document.getElementById("user-input").addEventListener("keypress", function (e) {
-      if (e.key === "Enter") {
-        sendMessage();
-      }
-    });
-  </script>
 </body>
 </html>
