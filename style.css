@@ -75,6 +75,10 @@ header .navigation li a:hover {
     zoom: 1.2;
     
 }
+#ddd{
+    display: none;
+
+}
 .banniere {
     background: url('acceuil.jpg') ;
     height: 90vh;
@@ -317,7 +321,7 @@ header .navigation li a:hover {
     color: white;
     text-decoration: none;
 }
-@media(max-width:800px){
+@media(max-width:680px){
     .contenu{
     display: none; 
     }
@@ -339,23 +343,25 @@ header .navigation li a:hover {
         font-size: -4px;
     }
 }
-@media (max-width: 400px) 
+@media (max-width: 200px) 
 {
     #ttt{
         font-size: 30px;
     }
     .logo{
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        background-color: rgba(217, 132, 12, 0.6);
         
     }
-    body{
-        background: rgb(81, 80, 80);
-    }
+    
     .banniere{
         background: url(acceuil.jpg);
-        background-size: cover;
         width: 400px;
+        background-position: none;
         height: 240px;
+        border: none;
+        display: none;
+    }
+    .service-card img, .service1 img, .service3 img {
+        width: 100px;
     }
 }
