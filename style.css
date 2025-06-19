@@ -321,47 +321,135 @@ header .navigation li a:hover {
     color: white;
     text-decoration: none;
 }
-@media(max-width:680px){
-    .contenu{
-    display: none; 
+
+@media screen and (max-width: 992px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
     }
-    
-    .banniere img{
-        width: 20%;
-        height: 30%;
+
+    .header .navigation {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
     }
-    .banniere{
-        background: url(acceuil.jpg);
-        background-size: cover;
-        
+
+    .banniere {
+        background-image: none;
+        border: none;
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
     }
-    body{
-        overflow-x: hidden;
-        flex-wrap: wrap;
+
+    .banniere .cta-buttons a {
+        margin: 20px 10px;
     }
-    header.logo{
-        font-size: -4px;
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card img, .service1 img, .service3 img {
+        width: 90%;
+        height: auto;
+    }
+
+    .titre-texte {
+        font-size: 2em;
+    }
+
+    .about-list,
+    .apropos .about-intro {
+        font-size: 22px;
+        text-align: left;
+    }
+
+    .call {
+        font-size: 24px;
     }
 }
-@media (max-width: 200px) 
-{
-    #ttt{
-        font-size: 30px;
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
     }
-    .logo{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        
+
+    header {
+        padding: 10px;
+        flex-direction: column;
+        text-align: center;
     }
-    
-    .banniere{
-        background: url(acceuil.jpg);
-        width: 400px;
-        background-position: none;
-        height: 240px;
+
+    header .logo {
+        font-size: 40px;
+    }
+
+    header .logo span {
+        font-size: 50px;
+    }
+
+    header .navigation {
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .banniere {
         border: none;
-        display: none;
+        border-radius:none ;
+        background-image: none;
+        height: auto;
+        padding: 30px 15px;
+        flex-direction: column;
     }
+
+    .banniere .cta-buttons a {
+        margin: 10px auto;
+        width: 80%;
+    }
+
     .service-card img, .service1 img, .service3 img {
-        width: 100px;
+        width: 100%;
+        height: auto;
+    }
+
+    .titre-texte {
+        font-size: 1.6em;
+    }
+
+    .about-list li,
+    .apropos .about-intro {
+        font-size: 20px;
+    }
+
+    .cta-buttons {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .call {
+        font-size: 20px;
+    }
+
+    #menubutton {
+        top: 10px;
+        right: 10px;
+        padding: 8px 12px;
+    }
+
+    .menu {
+        width: 100%;
+        right: -100%;
+    }
+
+    .menu.active {
+        right: 0;
+    }
+
+    .copyright {
+        font-size: 14px;
     }
 }
