@@ -1,0 +1,23 @@
+form{
+    display: flex;
+    justify-content: center;
+    margin-top:20px ;
+}
+input{
+    padding: 10px;
+    width: 850px;
+    color: #ccc;
+    border: 1px solid #ccc;
+    border: none;
+    border-radius: 20px ;
+    outline: none;
+    background: rgba(0,0,0,0.5);
+}
+::placeholder{
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+    justify-content: center;
+    text-align: center;
+    
+}
